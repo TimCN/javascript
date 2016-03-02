@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>html</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var fullName = "zhang san";
+
+      var obj={
+        fullName:"li shi",
+        prop:{
+          fullName:"wang wu",
+          showName:function(){
+            return this.fullName;
+          }
+        }
+      }
+
+      var test = obj.prop.showName;
+
+      console.log(obj.prop.showName());
+
+      console.log(test());
+
+      console.log(obj.prop.showName.call(obj));
+
+
+
+
+
+    </script>
+
+  </body>
+</html>
