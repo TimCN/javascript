@@ -1,0 +1,19 @@
+{
+  "name": "demo1",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --verbose --color --display-error-details --config myWebpack.config.js",
+    "dev3":"node ./static/dist/abc.js",
+    "dev1": "node server.js",
+    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tim",
+  "license": "MIT",
+  "dependencies": {
+    "clean-webpack-plugin": "^0.1.8",
+    "webpack": "^1.12.14"
+  }
+}
